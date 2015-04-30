@@ -1,0 +1,26 @@
+# Dependencies
+#markdown:         kramdown
+markdown:         redcarpet
+highlighter:      rouge
+
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
+
+# Setup
+title:            RTFM
+tagline:          'Deployment manual for developers'
+description:      |
+  A condescending guide to building stateless web applications for deployment on
+  Digital by Default infrastructure
+url:              http://hyde.getpoole.com
+baseurl:          /
+
+author:
+  name:           'Mark Otto'
+  url:            https://twitter.com/mdo
+
+paginate:         5
+
+github:
+  repo:           https://github.com/LandRegistry-Ops
