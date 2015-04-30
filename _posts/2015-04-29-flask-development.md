@@ -32,11 +32,22 @@ Within a Flask application this can be easily achieved with the following code s
 
 ```python
 # When running in debug mode, Flask will automatically route the output stream to the console
-if not app.debug()
+if not app.debug:
     import logging
+
+    # Create log format - 'YYYY-MM-DD HH:MM:SS [LOG LEVEL] MESSAGE'
+    formatter = logging.Formatter('%(asctime)s [%(levelname)s] %(message)s','%Y-%m-%d %H:%M:%S')
+
+    # Create console handler
+    stdout = logging.StreamHandler()
+    stdout.setLevel(logging.INFO)
+    stdout.setFormatter(formatter)
+
+    # Enable log handler
+    app.logger.addHandler(stdout)
 ```
 
-This will create a new log handler for applications logs and send all events in the output stream to `stdout` in the format `2015-05-29 18:21 [INFO] Sample log entry`. This allows us to capture the `stdout` stream and manage logs in a standardised manner.
+This will create a new log handler for applications logs and send all events in the output stream to `stdout` in the format `2015-05-29 18:21:06 [INFO] Sample log entry`. This allows us to capture the `stdout` stream and manage logs in a standardised manner.
 
 ## Health checks
 
