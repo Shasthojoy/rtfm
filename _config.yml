@@ -13,7 +13,7 @@ tagline:          'Deployment manual for developers'
 description:      |
   A condescending guide to building stateless web applications for deployment on
   Digital by Default infrastructure
-url:              http://benfairless.github.io
+url:              http://benfairless.github.io/
 baseurl:          /rtfm/
 
 author:
