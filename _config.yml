@@ -1,7 +1,7 @@
 # Dependencies
 #markdown:         kramdown
 markdown:         redcarpet
-highlighter:      rouge
+highlighter:      pygments
 
 # Permalinks
 permalink:        pretty
@@ -13,12 +13,12 @@ tagline:          'Deployment manual for developers'
 description:      |
   A condescending guide to building stateless web applications for deployment on
   Digital by Default infrastructure
-url:              http://hyde.getpoole.com
-baseurl:          /
+url:              http://benfairless.github.io
+baseurl:          /rtfm/
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name:           Land Registry Operations
+  url:            https://github.com/LandRegistry-Ops
 
 paginate:         5
 
